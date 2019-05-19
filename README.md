@@ -1,9 +1,10 @@
 # Carrick SU site
+## Web site for Carrick Primary Scripture Union
 
-## csbackend
+## backend
 Dotnet core ASP.NET service.
 
-## csfrontend
+## frontend
 Angular front end.
 
 ## Setup
