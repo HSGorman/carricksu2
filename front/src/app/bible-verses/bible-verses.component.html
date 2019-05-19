@@ -1,0 +1,19 @@
+<div fxLayout="rows wrap" fxLayoutAlign="start center" fxLayoutGap="20px">
+  <div *ngFor="let verse of verses" class="thumbnail">
+    <a routerLink="/bibleVerse/{{verse}}" routerLinkActive="active">
+      <mat-card class="container">
+        <div class="smalloverlay">
+          <div class="text">
+            <mat-icon>stars</mat-icon>
+          </div>
+        </div>
+        <mat-card-header>
+          <mat-card-title>
+            {{verse}}
+          </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{imagePath}}/{{verse}}" alt="{{verse}}">
+      </mat-card>
+    </a>
+  </div>
+</div>

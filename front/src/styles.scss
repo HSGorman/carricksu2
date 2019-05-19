@@ -1,0 +1,103 @@
+@import "../node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+body {
+  background-image: linear-gradient(to right top, #062d68, #3d508a, #6876ad, #929fd2, #bec9f7)
+}
+
+img.rounded  {
+  border-radius: 50%;
+}
+
+.transparent {
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: yellow;
+  opacity: 0.4;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.smalloverlay {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  background-color: gray;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .25s linear;
+}
+
+.container:hover .smalloverlay {
+  bottom: 0;
+  height: 12%;
+  border-radius: 10px;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.thumbnail {
+  width: 300px;
+  height: 300px;
+}
+
+.wide-card {
+  width: 400px;
+}
+
+@media screen and (min-width: 400px) {
+  .notice-toolbar {
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .notice-toolbar {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .notice-toolbar {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .narrow-card {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .narrow-card {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .narrow-card {
+    width: 250px;
+  }
+}
+.fill-rest {
+  height: calc(100% - 76px);
+  width: 100%;
+}

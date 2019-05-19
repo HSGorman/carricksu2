@@ -1,0 +1,62 @@
+<div>
+  <mat-toolbar>
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <a mat-button class="companyName" routerLink="/">
+      <span>Carrick Primary SU</span>
+    </a>
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <button mat-button (click)="home()">Home</button>
+      <button mat-button (click)="bible()">Bible Verses</button>
+      <button mat-button (click)="video()">Videos</button>
+      <button mat-button (click)="quiz()">Quiz</button>
+      <button mat-button (click)="parentinfo()">Parent Information</button>
+      <span></span>
+      <button mat-button (click)="wondersurf()">Wondersurf</button>
+      <button mat-button (click)="classdojo()">Class Dojo</button>
+    </div>
+
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill class="example-container">
+
+    <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
+      <div fxLayout="column">
+        <button mat-button (click)="home()">Home</button>
+        <button mat-button (click)="bible()">Bible Verses</button>
+        <button mat-button (click)="video()">Videos</button>
+        <button mat-button (click)="quiz()">Quiz</button>
+        <button mat-button (click)="parentinfo()">Parent Information</button>
+        <span></span>
+        <button mat-button (click)="wondersurf()">Wondersurf</button>
+        <button mat-button (click)="classdojo()">Class Dojo</button>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+
+
+<!--
+
+<mat-toolbar mat-scroll-shrink>
+  <div fxShow="true" fxHide.gt-sm="true">
+    <button mat-button (click)="home()">Home</button>
+    <button mat-button (click)="bible()">Bible Verses</button>
+    <button mat-button (click)="video()">Videos</button>
+    <button mat-button (click)="quiz()">Quiz</button>
+    <button mat-button (click)="parentinfo()">Parent Information</button>
+    <span></span>
+    <button mat-button (click)="wondersurf()">Wondersurf</button>
+    <button mat-button (click)="classdojo()">Class Dojo</button>
+  </div>
+</mat-toolbar>
+-->
+

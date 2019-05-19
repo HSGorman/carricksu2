@@ -1,0 +1,22 @@
+<div fxLayout="column">
+  <div fxLayout="row">
+    <mat-toolbar-row>
+      <mat-toolbar color="accent">
+        <button mat-raised-button color="primary" (click)="normalVerse()">Normal verse</button>
+        <button mat-raised-button color="primary" (click)="spinVerse()">Spin verse</button>
+        <button mat-raised-button color="primary" (click)="wobbleVerse()">Wobble verse</button>
+        <button mat-raised-button color="primary" (click)="shrinkVerse()">Shrink verse</button>
+      </mat-toolbar>
+    </mat-toolbar-row>
+  </div>
+
+  <div fxLayout="row">
+    <div fxFlex="20">
+    </div>
+    <div fxFlex="60">
+      <img id="bibleVerseImage" fxFill src="{{path}}/{{verse}}" [class.rotate-center]="spin" [class.wobble-center]="wobble" [class.shrink-center]="shrink">
+    </div>
+    <div fxFlex="20">
+    </div>
+  </div>
+</div>
