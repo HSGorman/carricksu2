@@ -8,11 +8,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace csbackend.Controllers
 {
-    [EnableCors("CarricksuProfile")]
+    // [EnableCors("CarricksuProfile")]
     [Route("api/[controller]")]
     [ApiController]
     public class VersesController : ControllerBase
     {
+
+        public VersesController()
+        {
+            Console.WriteLine("Starting controller");
+        }
+
         [HttpGet]
         public ActionResult<IEnumerable<string>> ListImages()
         {

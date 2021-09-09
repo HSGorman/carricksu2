@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Newtonsoft.Json;
-
+using System.Text.Json;
+using System.Text.Json.Serialization;
 namespace csbackend
 {
     public class VideoModel
@@ -17,11 +17,11 @@ namespace csbackend
         public static List<VideoModel> Load(string filename)
         {
             var data = File.ReadAllText(filename);
-            return JsonConvert.DeserializeObject<List<VideoModel>>(data);
+            return JsonSerializer.Deserialize<List<VideoModel>>(data);
         }
         public static void Save(List<VideoModel> data, string filename)
         {
-            File.WriteAllText(filename, JsonConvert.SerializeObject(data));
+            File.WriteAllText(filename, JsonSerializer.Serialize(data));
         }
         public string VideoName { get; set; }
         public string Url { get; set; }

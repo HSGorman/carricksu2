@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace csbackend.Controllers
 {
-    [EnableCors("CarricksuProfile")]
+    // [EnableCors("CarricksuProfile")]
     [Route("api/[controller]")]
     [ApiController]
     public class VideoController : ControllerBase

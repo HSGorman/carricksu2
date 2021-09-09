@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/samgorman/projects/carricksu/csbackend/csbackend.csproj": {}
+    "/home/sgorman/projects/carricksu2/backend/csbackend.csproj": {}
   },
   "projects": {
-    "/home/samgorman/projects/carricksu/csbackend/csbackend.csproj": {
+    "/home/sgorman/projects/carricksu2/backend/csbackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/samgorman/projects/carricksu/csbackend/csbackend.csproj",
+        "projectUniqueName": "/home/sgorman/projects/carricksu2/backend/csbackend.csproj",
         "projectName": "csbackend",
-        "projectPath": "/home/samgorman/projects/carricksu/csbackend/csbackend.csproj",
-        "packagesPath": "/home/samgorman/.nuget/packages/",
-        "outputPath": "/home/samgorman/projects/carricksu/csbackend/obj/",
+        "projectPath": "/home/sgorman/projects/carricksu2/backend/csbackend.csproj",
+        "packagesPath": "/home/sgorman/.nuget/packages/",
+        "outputPath": "/home/sgorman/projects/carricksu2/backend/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/home/samgorman/.nuget/NuGet/NuGet.Config"
+          "/home/sgorman/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "net6.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,35 +35,33 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[6.2.1, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/sgorman/dotnet6/bin/sdk/6.0.100-preview.7.21379.14/RuntimeIdentifierGraph.json"
         }
       }
     }
